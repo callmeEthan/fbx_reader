@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "trace",
+  "name": "log",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

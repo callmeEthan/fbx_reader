@@ -1,6 +1,7 @@
 //!#import Blank
 // view settings
 #macro ASSETS   "assets/"
+fbx_init()
 application_surface_enable(true);
 var w = 1280;
 var h = 720;

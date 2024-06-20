@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "trace",
+  "name": "fbx_reader",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

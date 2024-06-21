@@ -50,7 +50,19 @@ function fbx_init()
 	enum FBX_PBR_Mat    {albedo,normal,emissive,arm,sizeof}
 	enum FBX_BuffTypes {bind, skin, geom, anim, sizeof}
 }
-
+function fbx_clear()
+{
+	ds_list_destroy(FBX_TEMP_LISTS);
+	var spr, key;
+	key = ds_map_find_first(FBX_SPRITE_POOL);
+	while ds_map_exists(FBX_SPRITE_POOL,key)
+	{
+	    spr = FBX_SPRITE_POOL[? key];
+	    if sprite_exists(spr) then sprite_delete(spr);
+	    key = ds_map_find_next(FBX_SPRITE_POOL,key);
+	}
+	vertex_format_delete(FBX_VERTEX_FORMAT);
+}
 function fbx_timeline_value_get(timeline, time)
 {
 	if array_length_1d(timeline) == 0 then return 0;

@@ -410,7 +410,7 @@ function fbx_build_vertex_buffers()
 	                {
 	                    bw = bwt[k];
 	                    bones[k] = bw[0];
-	                    weigh[k] = bw[1] * 255;
+	                    weigh[k] = bw[1];
 	                }
 	                else
 	                {
@@ -419,11 +419,13 @@ function fbx_build_vertex_buffers()
 	                }
 	            }
             
-	            bc = fbx_color_array_to_rgb( bones );
-	            wc = fbx_color_array_to_rgb( weigh );
+	            //bc = fbx_color_array_to_rgb( bones );
+	            //wc = fbx_color_array_to_rgb( weigh );
             
-	            vertex_color(b,bc,bones[3]);
-	            vertex_color(b,wc,weigh[3]);
+	            //vertex_color(b,bc,bones[3]);
+	            //vertex_color(b,wc,weigh[3]);
+	            vertex_color(b,make_color_rgb(bones[0], bones[1], bones[2]),bones[3]);
+	            vertex_color(b,make_color_rgb(weigh[0], weigh[1], weigh[2]),weigh[3]);
 	        }
 	    }
 	    vertex_end(b);

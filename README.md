@@ -13,7 +13,7 @@ Unfortunatelly not all animations can be loaded using this readed. Please check 
 
 I tested this asset only using fbx 7400 version exported from Blender.  
 Look out for any error when exporting fbx using Blender, sometime it fail to calculate tangent or something, this script will fail when reading undefined value.  
-** \*Animation importing seem to be broken, the script will sometimes stuck in a loop,  it's safer to import the fbx without any animation.**
+**Animation importing seem to be broken, the script will sometimes stuck in a loop,  it's safer to import the fbx without any animation.**
   
 **Please direct any issues you may have to the [original author](https://github.com/alsekond/fbx_reader), I don't know how to fix it.**
 ### Credits

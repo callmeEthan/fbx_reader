@@ -12,7 +12,8 @@ Unfortunatelly not all animations can be loaded using this readed. Please check 
 * animation only skeletal (not strict)
 
 I tested this asset only using fbx 7400 version exported from Blender.  
-Look out for any error when exporting fbx using Blender, sometime it fail to calculate tangent or something, this script will fail when reading undefined value.  
+Sometime it fail to calculate tangent or something, this script will fail when reading undefined value.  
+Also stuck in a loop sometime for some reason.  
   
 **Please direct any issues you may have to the [original author](https://github.com/alsekond/fbx_reader), I don't know how to fix it.**
 ### Credits
